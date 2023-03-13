@@ -1,0 +1,63 @@
+{
+  "name": "@halo-dev/admin-api",
+  "version": "1.1.0",
+  "description": "Halo admin api client.",
+  "main": "lib/index.js",
+  "module": "./lib/index.js",
+  "types": "lib/index.d.ts",
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "scripts": {
+    "dev": "tsc --build --force --watch",
+    "build": "tsc --build --force",
+    "test": "jest --rootDir src"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halo-dev/js-sdk.git",
+    "directory": "packages/admin-api"
+  },
+  "keywords": [
+    "halo",
+    "halo-sdk",
+    "halo-admin",
+    "halo-admin-api"
+  ],
+  "maintainers": [
+    {
+      "name": "guqing",
+      "email": "1484563614@qq.com",
+      "url": "https://github.com/guqing"
+    },
+    {
+      "name": "ryanwang",
+      "email": "i@ryanc.cc",
+      "url": "https://github.com/ruibaby"
+    }
+  ],
+  "author": "@halo-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/halo-dev/js-sdk/issues"
+  },
+  "homepage": "https://github.com/halo-dev/js-sdk/tree/master/packages/admin-api#readme",
+  "dependencies": {
+    "@halo-dev/rest-api-client": "workspace:*",
+    "tslib": "^2.4.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  }
+}

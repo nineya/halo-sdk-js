@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "tsconfig.tsbuildinfo"
+  },
+  "include": [],
+  "exclude": ["node_modules", "lib"],
+  "references": [
+    {
+      "path": "./packages/logger"
+    },
+    {
+      "path": "./packages/rest-api-client"
+    },
+    {
+      "path": "./packages/admin-api"
+    },
+    {
+      "path": "./packages/content-api"
+    },
+    {
+      "path": "./packages/markdown-renderer"
+    }
+  ]
+}

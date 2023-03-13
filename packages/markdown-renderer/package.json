@@ -1,0 +1,77 @@
+{
+  "name": "@halo-dev/markdown-renderer",
+  "version": "1.1.0",
+  "description": "Halo markdown renderer.",
+  "main": "lib/markdown-renderer.umd.js",
+  "module": "lib/markdown-renderer.es.js",
+  "engines": {
+    "node": ">=12"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\""
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halo-dev/js-sdk.git",
+    "directory": "packages/markdown-renderer"
+  },
+  "keywords": [
+    "halo",
+    "halo-sdk",
+    "markdown",
+    "markdown-it",
+    "markdown-renderer"
+  ],
+  "maintainers": [
+    {
+      "name": "ryanwang",
+      "email": "i@ryanc.cc",
+      "url": "https://github.com/ruibaby"
+    }
+  ],
+  "author": "@halo-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/halo-dev/js-sdk/issues"
+  },
+  "homepage": "https://github.com/halo-dev/js-sdk/tree/master/packages/markdown-renderer#readme",
+  "dependencies": {
+    "@iktakahiro/markdown-it-katex": "^4.0.1",
+    "lodash.escape": "^4.0.1",
+    "markdown-it": "^12.3.2",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-anchor": "^8.6.4",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-emoji": "^2.0.2",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-images-preview": "^1.0.1",
+    "markdown-it-ins": "^3.0.1",
+    "markdown-it-mark": "^3.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-table-of-contents": "^0.6.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "mermaid": "^8.14.0"
+  },
+  "devDependencies": {
+    "@types/lodash.escape": "^4.0.7",
+    "@types/markdown-it": "^12.2.3",
+    "vite": "^2.9.9"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/markdown-renderer.es.js",
+      "require": "./lib/markdown-renderer.umd.js"
+    },
+    "./package.json": "./package.json"
+  }
+}

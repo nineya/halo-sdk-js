@@ -1,0 +1,64 @@
+{
+  "name": "@halo-dev/logger",
+  "version": "1.1.0",
+  "description": "Halo SDK for JavaScript - Logger",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "browser": "./lib/index.browser.js",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "scripts": {
+    "dev": "tsc --build --force --watch",
+    "build": "tsc --build --force",
+    "test": "jest --rootDir src"
+  },
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halo-dev/js-sdk.git",
+    "directory": "packages/logger"
+  },
+  "keywords": [
+    "halo",
+    "log",
+    "logger",
+    "logging",
+    "node.js",
+    "typescript",
+    "javascript"
+  ],
+  "author": "@halo-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/halo-dev/js-sdk/issues"
+  },
+  "homepage": "https://github.com/halo-dev/js-sdk#readme",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/sinon": "^9.0.11",
+    "assert": "^1.5.0",
+    "chai": "^4.3.6",
+    "sinon": "^9.2.4"
+  },
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  }
+}

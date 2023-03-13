@@ -1,0 +1,67 @@
+{
+  "name": "@halo-dev/js-sdk",
+  "version": "0.0.0",
+  "description": "Packages for Halo JavaScript SDK.",
+  "private": true,
+  "scripts": {
+    "test": "pnpm --filter './packages/**' run test",
+    "dev": "pnpm --filter './packages/**' run dev --parallel",
+    "build": "pnpm --filter './packages/**' run build",
+    "build:docs": "typedoc --excludeExternals --readme README.md --entryPoints packages/admin-api/src packages/content-api/src packages/logger/src packages/rest-api-client/src",
+    "lint": "eslint .",
+    "cleanup": "rimraf node_modules docs packages/**/lib packages/**/node_modules",
+    "changeset": "changeset",
+    "release": "changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/halo-dev/js-sdk.git"
+  },
+  "keywords": [
+    "halo",
+    "halo-sdk"
+  ],
+  "maintainers": [
+    {
+      "name": "guqing",
+      "email": "1484563614@qq.com",
+      "url": "https://github.com/guqing"
+    },
+    {
+      "name": "ryanwang",
+      "email": "i@ryanc.cc",
+      "url": "https://github.com/ruibaby"
+    }
+  ],
+  "author": "@halo-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/halo-dev/js-sdk/issues"
+  },
+  "homepage": "https://github.com/halo-dev/js-sdk#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-typescript": "^7.17.12",
+    "@changesets/cli": "^2.22.0",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "jest": "^26.6.3",
+    "lint-staged": "^12.4.2",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.5.6",
+    "typedoc": "^0.22.15",
+    "typedoc-plugin-missing-exports": "^0.22.6",
+    "typescript": "^4.7.2"
+  }
+}
