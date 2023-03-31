@@ -1,6 +1,6 @@
 {
-  "name": "@halo-dev/tracker",
-  "version": "0.0.1",
+  "name": "@nineya/halo-tracker",
+  "version": "1.0.0",
   "description": "Halo tracker.",
   "main": "lib/index.js",
   "module": "./lib/index.js",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/halo-dev/js-sdk.git",
+    "url": "git+https://github.com/halo-dev/halo-sdk-js.git",
     "directory": "packages/tracker"
   },
   "keywords": [
@@ -30,17 +30,17 @@
   ],
   "maintainers": [
     {
-      "name": "guqing",
-      "email": "1484563614@qq.com",
-      "url": "https://github.com/guqing"
+      "name": "nineya",
+      "email": "lsw@nineya.com",
+      "url": "https://github.com/nineya"
     }
   ],
-  "author": "@halo-dev",
+  "author": "@nineya",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/halo-dev/js-sdk/issues"
+    "url": "https://github.com/nineya/halo-sdk-js/issues"
   },
-  "homepage": "https://github.com/halo-dev/js-sdk/tree/master/packages/tracker#readme",
+  "homepage": "https://github.com/nineya/halo-sdk-js/tree/master/packages/tracker#readme",
   "dependencies": {
     "dotenv": "^10.0.0"
   },
