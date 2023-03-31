@@ -1,17 +1,17 @@
 <h3 align="center">Halo Rest API Client</h3>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@halo-dev/rest-api-client">
-    <img src="https://img.shields.io/npm/v/@halo-dev/rest-api-client.svg" alt="npm version"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-rest-api-client">
+    <img src="https://img.shields.io/npm/v/@nineya/halo-rest-api-client.svg" alt="npm version"/>
   </a>
-  <a href="https://www.npmjs.com/package/@halo-dev/rest-api-client">
-      <img alt="npm" src="https://img.shields.io/npm/dm/@halo-dev/rest-api-client" alt="Downloads"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-rest-api-client">
+      <img alt="npm" src="https://img.shields.io/npm/dm/@nineya/halo-rest-api-client" alt="Downloads"/>
   </a>
-  <a href="https://github.com/halo-dev/js-sdk/blob/master/packages/rest-api-client/package.json">
-      <img alt="node-current" src="https://img.shields.io/node/v/@halo-dev/rest-api-client?color=blue">
+  <a href="https://github.com/nineya/halo-sdk-js/blob/master/packages/rest-api-client/package.json">
+      <img alt="node-current" src="https://img.shields.io/node/v/@nineya/halo-rest-api-client?color=blue">
   </a>
-  <a href="https://github.com/halo-dev/js-sdk/blob/master/LICENSE">
-    <img alt="NPM" src="https://img.shields.io/npm/l/@halo-dev/rest-api-client" alt="LICENSE">
+  <a href="https://github.com/nineya/halo-sdk-js/blob/master/LICENSE">
+    <img alt="NPM" src="https://img.shields.io/npm/l/@nineya/halo-rest-api-client" alt="LICENSE">
   </a>
 </p>
 
@@ -20,17 +20,17 @@
 ## Installation
 
 ```shell
-npm install @halo-dev/rest-api-client
+npm install @nineya/halo-rest-api-client
 ```
 
 use `require` or `import` to import the library.
 
 ```javascript
 // CommonJS
-const { HaloRestAPIClient } = require('@halo-dev/rest-api-client')
+const { HaloRestAPIClient } = require('@nineya/halo-rest-api-client')
 
 // ES modules
-import { HaloRestAPIClient } from '@halo-dev/rest-api-client'
+import { HaloRestAPIClient } from '@nineya/halo-rest-api-client'
 ```
 
 ## Usage
@@ -101,7 +101,7 @@ import {
   // FileTokenStore,
   // TokenStore,
   DefaultTokenProvider,
-} from '@halo-dev/rest-clint-api'
+} from '@nineya/halo-rest-clint-api'
 
 // Use LocalStorageTokenStore to persistence AccessToken to localStorage(in browser only)
 // you can use FileTokenStore if in the Node environment.

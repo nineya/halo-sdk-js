@@ -7,17 +7,17 @@
 <h3 align="center">Halo SDK</h3>
 
 <p align="center">
-  <a href="https://github.com/halo-dev/js-sdk/actions">
-    <img src="https://github.com/halo-dev/js-sdk/actions/workflows/node.js.yml/badge.svg" alt="Project Build"/>
+  <a href="https://github.com/nineya/halo-sdk-js/actions">
+    <img src="https://github.com/nineya/halo-sdk-js/actions/workflows/node.js.yml/badge.svg" alt="Project Build"/>
   </a>
-  <a href="https://www.npmjs.com/package/@halo-dev/admin-api">
-      <img alt="npm" src="https://img.shields.io/npm/dm/@halo-dev/admin-api?label=admin%20downloads" alt="Admin Api Downloads"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-admin-api">
+      <img alt="npm" src="https://img.shields.io/npm/dm/@nineya/halo-admin-api?label=admin%20downloads" alt="Admin Api Downloads"/>
   </a>
-  <a href="https://www.npmjs.com/package/@halo-dev/content-api">
-      <img alt="npm" src="https://img.shields.io/npm/dm/@halo-dev/content-api?label=content%20downloads&color=blue" alt="Content Api Downloads"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-content-api">
+      <img alt="npm" src="https://img.shields.io/npm/dm/@nineya/halo-content-api?label=content%20downloads&color=blue" alt="Content Api Downloads"/>
   </a>
-  <a href="https://www.npmjs.com/package/@halo-dev/admin-api">
-    <img src="https://img.shields.io/npm/v/@halo-dev/admin-api.svg" alt="npm version"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-admin-api">
+    <img src="https://img.shields.io/npm/v/@nineya/halo-admin-api.svg" alt="npm version"/>
   </a>
 </p>
 
@@ -39,7 +39,7 @@
 Install this library using npm as follows
 
 ```shell
-npm install @halo-dev/admin-api --save
+npm install @nineya/halo-admin-api --save
 ```
 
 ### Usage
@@ -47,7 +47,7 @@ npm install @halo-dev/admin-api --save
 Here is a simple code for obtaining a list of articles.
 
 ```javascript
-import { AdminApiClient, HaloRestAPIClient } from '@halo-dev/admin-api'
+import { AdminApiClient, HaloRestAPIClient } from '@nineya/halo-admin-api'
 //http request tool for halo rest api.
 const haloRestApiClient = new HaloRestAPIClient({
   baseUrl: process.env.HALO_BASE_URL,
@@ -62,9 +62,9 @@ haloAdminClient.post.list().then((res) => {
 ```
 
 You can also view the complete implementation of the halo-admin
-project: [@halo-dev/halo-admin](https://github.com/halo-dev/halo-admin).
+project: [@nineya/halo-admin](https://github.com/halo-dev/halo-admin).
 
-The `@halo-dev/admin-api` package relies on `@halo-dev/rest-api-client`，since `@halo-dev/rest-api-client` is based
+The `@nineya/halo-admin-api` package relies on `@nineya/halo-rest-api-client`，since `@nineya/halo-rest-api-client` is based
 on [axios](https://axios-http.com/docs/intro), so you can use the `axios` interceptor
 
 ```javascript
@@ -97,14 +97,14 @@ axios.interceptors.response.use(
 )
 ```
 
-The `@halo-dev/content-api`package can also use interceptors like this.
+The `@nineya/halo-content-api`package can also use interceptors like this.
 
 ## Sdk for Content API
 
 ### Installation
 
 ```shell
-npm install @halo-dev/content-api --save
+npm install @nineya/halo-content-api --save
 ```
 
 ### Usage
@@ -112,7 +112,7 @@ npm install @halo-dev/content-api --save
 Here is a simple code for obtaining a list of articles.
 
 ```javascript
-import { ContentApiClient, HaloRestAPIClient } from '@halo-dev/content-api'
+import { ContentApiClient, HaloRestAPIClient } from '@nineya/halo-content-api'
 //http request tool for halo rest api.
 const haloRestApiClient = new HaloRestAPIClient({
   baseUrl: process.env.HALO_BASE_URL,
@@ -133,16 +133,16 @@ haloContentClient.post.list().then((res) => {
 Install this library using npm as follows
 
 ```shell
-npm install @halo-dev/rest-api-client
+npm install @nineya/halo-rest-api-client
 ```
 
 use `require` or `import` to import the library.
 
 ```javascript
 // CommonJS
-const { HaloRestAPIClient } = require('@halo-dev/rest-api-client')
+const { HaloRestAPIClient } = require('@nineya/halo-rest-api-client')
 // ES modules
-import { HaloRestAPIClient } from '@halo-dev/rest-api-client'
+import { HaloRestAPIClient } from '@nineya/halo-rest-api-client'
 ```
 
 ### Usage
@@ -218,7 +218,7 @@ import {
   // FileTokenStore,
   // TokenStore,
   DefaultTokenProvider,
-} from '@halo-dev/rest-clint-api'
+} from '@nineya/halo-rest-clint-api'
 
 // Use LocalStorageTokenStore to persistence AccessToken to localStorage (in browser only)
 //you can use FileTokenStore if in the Node environment.
@@ -275,12 +275,12 @@ client.post('https://example.halo.run', parameters)
 Install this library using npm as follows
 
 ```shell
-npm install @halo-dev/logger --save
+npm install @nineya/halo-logger --save
 ```
 
 ### Key Concepts
 
-The `@halo-dev/logger` package supports the following log levels specified in order of most verbose to least verbose:
+The `@nineya/halo-logger` package supports the following log levels specified in order of most verbose to least verbose:
 
 - debug
 - info
@@ -298,7 +298,7 @@ emitted.
 #### example 1 - basic usage
 
 ```javascript
-import * as Logger from "@halo-dev/logger";
+import * as Logger from "@nineya/halo-logger";
 
 Logger.setLogLevel("info");
 
@@ -321,7 +321,7 @@ client.post.list()
 #### example 2 - redirect log output
 
 ```javascript
-import { HaloLogger, setLogLevel } from '@halo-dev/logger'
+import { HaloLogger, setLogLevel } from '@nineya/halo-logger'
 
 setLogLevel('warning')
 

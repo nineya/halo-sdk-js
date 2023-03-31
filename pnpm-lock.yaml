@@ -48,18 +48,18 @@ importers:
 
   packages/admin-api:
     specifiers:
-      '@halo-dev/rest-api-client': workspace:*
+      '@nineya/halo-rest-api-client': workspace:*
       tslib: ^2.4.0
     dependencies:
-      '@halo-dev/rest-api-client': link:../rest-api-client
+      '@nineya/halo-rest-api-client': link:../rest-api-client
       tslib: 2.4.0
 
   packages/content-api:
     specifiers:
-      '@halo-dev/rest-api-client': workspace:*
+      '@nineya/halo-rest-api-client': workspace:*
       tslib: ^2.4.0
     dependencies:
-      '@halo-dev/rest-api-client': link:../rest-api-client
+      '@nineya/halo-rest-api-client': link:../rest-api-client
       tslib: 2.4.0
 
   packages/logger:
@@ -124,7 +124,7 @@ importers:
 
   packages/rest-api-client:
     specifiers:
-      '@halo-dev/logger': workspace:*
+      '@nineya/halo-logger': workspace:*
       '@types/qs': ^6.9.7
       '@types/store': ^2.0.2
       axios: ^0.24.0
@@ -134,7 +134,7 @@ importers:
       qs: ^6.10.3
       tslib: ^2.4.0
     dependencies:
-      '@halo-dev/logger': link:../logger
+      '@nineya/halo-logger': link:../logger
       axios: 0.24.0
       form-data: 4.0.0
       js-base64: 3.7.2

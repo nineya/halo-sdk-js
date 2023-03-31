@@ -1,4 +1,4 @@
-# @halo-dev/markdown-renderer
+# @nineya/halo-markdown-renderer
 
 ## 1.1.0
 

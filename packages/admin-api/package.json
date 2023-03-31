@@ -1,6 +1,6 @@
 {
   "name": "@nineya/halo-admin-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Halo admin api client.",
   "main": "lib/index.js",
   "module": "./lib/index.js",
@@ -46,7 +46,7 @@
   },
   "homepage": "https://github.com/nineya/halo-sdk-js/tree/master/packages/admin-api#readme",
   "dependencies": {
-    "@halo-dev/halo-rest-api-client": "workspace:*",
+    "@nineya/halo-rest-api-client": "workspace:*",
     "tslib": "^2.4.0"
   },
   "exports": {

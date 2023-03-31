@@ -1,4 +1,4 @@
-import { HttpClient } from '@halo-dev/rest-api-client'
+import { HttpClient } from '@nineya/halo-rest-api-client'
 import { buildPath } from '../url'
 import { Backup, BasePostDetail, Response, UploadOptions } from '../types'
 

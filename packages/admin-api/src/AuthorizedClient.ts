@@ -1,6 +1,6 @@
 import { buildPath } from './url'
 import { AccessToken, LoginPreCheck, Response } from './types'
-import { DefaultHttpClient, HaloRequestConfigBuilder, HaloResponseHandler } from '@halo-dev/rest-api-client'
+import { DefaultHttpClient, HaloRequestConfigBuilder, HaloResponseHandler } from '@nineya/halo-rest-api-client'
 
 export class AuthorizedClient {
   private client: DefaultHttpClient

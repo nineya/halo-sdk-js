@@ -1,4 +1,4 @@
-# @halo-dev/logger
+# @nineya/halo-logger
 
 ## 1.1.0
 

@@ -1,17 +1,17 @@
 <h3 align="center">Admin API Client</h3>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@halo-dev/admin-api">
-    <img src="https://img.shields.io/npm/v/@halo-dev/admin-api.svg" alt="npm version"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-admin-api">
+    <img src="https://img.shields.io/npm/v/@nineya/halo-admin-api.svg" alt="npm version"/>
   </a>
-  <a href="https://www.npmjs.com/package/@halo-dev/admin-api">
-      <img alt="npm" src="https://img.shields.io/npm/dm/@halo-dev/admin-api" alt="Downloads"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-admin-api">
+      <img alt="npm" src="https://img.shields.io/npm/dm/@nineya/halo-admin-api" alt="Downloads"/>
   </a>
-  <a href="https://github.com/halo-dev/js-sdk/blob/master/packages/admin-api/package.json">
-      <img alt="node-current" src="https://img.shields.io/node/v/@halo-dev/admin-api?color=blue">
+  <a href="https://github.com/nineya/halo-sdk-js/blob/master/packages/admin-api/package.json">
+      <img alt="node-current" src="https://img.shields.io/node/v/@nineya/halo-admin-api?color=blue">
   </a>
-  <a href="https://github.com/halo-dev/js-sdk/blob/master/LICENSE">
-    <img alt="NPM" src="https://img.shields.io/npm/l/@halo-dev/admin-api" alt="LICENSE">
+  <a href="https://github.com/nineya/halo-sdk-js/blob/master/LICENSE">
+    <img alt="NPM" src="https://img.shields.io/npm/l/@nineya/halo-admin-api" alt="LICENSE">
   </a>
 </p>
 
@@ -20,7 +20,7 @@
 ## Installation
 
 ```shell
-npm install @halo-dev/admin-api --save
+npm install @nineya/halo-admin-api --save
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ npm install @halo-dev/admin-api --save
 Here is a simple code for obtaining a list of posts.
 
 ```javascript
-import { AdminApiClient, HaloRestAPIClient } from '@halo-dev/admin-api'
+import { AdminApiClient, HaloRestAPIClient } from '@nineya/halo-admin-api'
 
 // http request tool for halo rest api.
 const haloRestApiClient = new HaloRestAPIClient({
@@ -44,7 +44,7 @@ haloAdminClient.post.list().then((res) => {
 })
 ```
 
-You can also view the complete implementation of the halo-admin project: [@halo-dev/halo-admin](https://github.com/halo-dev/halo-admin).
+You can also view the complete implementation of the halo-admin project: [@nineya/halo-admin](https://github.com/halo-dev/halo-admin).
 
 ### License
 

@@ -1,4 +1,4 @@
-import * as Logger from '@halo-dev/logger'
+import * as Logger from '@nineya/halo-logger'
 
 const logger = Logger.createClientLogger('Rest-Api-Client')
 

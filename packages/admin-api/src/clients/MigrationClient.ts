@@ -1,4 +1,4 @@
-import { FormData, HttpClient } from '@halo-dev/rest-api-client'
+import { FormData, HttpClient } from '@nineya/halo-rest-api-client'
 import { buildPath } from '../url'
 import { UploadOptions } from '../types'
 

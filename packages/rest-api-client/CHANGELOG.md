@@ -1,4 +1,4 @@
-# @halo-dev/rest-api-client
+# @nineya/halo-rest-api-client
 
 ## 1.1.0
 
@@ -9,10 +9,10 @@
 ### Patch Changes
 
 - Updated dependencies
-  - @halo-dev/logger@1.1.0
+  - @nineya/halo-logger@1.1.0
 
 ## 1.0.0
 
 ### Patch Changes
 
-- @halo-dev/logger@1.0.0
+- @nineya/halo-logger@1.0.0

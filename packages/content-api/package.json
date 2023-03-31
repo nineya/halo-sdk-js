@@ -1,6 +1,6 @@
 {
   "name": "@nineya/halo-content-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Halo content api client.",
   "main": "lib/index.js",
   "module": "./lib/index.js",

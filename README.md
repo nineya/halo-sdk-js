@@ -6,17 +6,17 @@
 <h3 align="center">Halo SDK</h3>
 
 <p align="center">
-  <a href="https://github.com/halo-dev/js-sdk/actions">
-    <img src="https://github.com/halo-dev/js-sdk/actions/workflows/node.js.yml/badge.svg" alt="Project Build"/>
+  <a href="https://github.com/nineya/halo-sdk-js/actions">
+    <img src="https://github.com/nineya/halo-sdk-js/actions/workflows/node.js.yml/badge.svg" alt="Project Build"/>
   </a>
-  <a href="https://www.npmjs.com/package/@halo-dev/admin-api">
-      <img alt="npm" src="https://img.shields.io/npm/dm/@halo-dev/admin-api?label=admin%20downloads" alt="Admin Api Downloads"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-admin-api">
+      <img alt="npm" src="https://img.shields.io/npm/dm/@nineya/halo-admin-api?label=admin%20downloads" alt="Admin Api Downloads"/>
   </a>
-  <a href="https://www.npmjs.com/package/@halo-dev/content-api">
-      <img alt="npm" src="https://img.shields.io/npm/dm/@halo-dev/content-api?label=content%20downloads&color=blue" alt="Content Api Downloads"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-content-api">
+      <img alt="npm" src="https://img.shields.io/npm/dm/@nineya/halo-content-api?label=content%20downloads&color=blue" alt="Content Api Downloads"/>
   </a>
-  <a href="https://www.npmjs.com/package/@halo-dev/admin-api">
-    <img src="https://img.shields.io/npm/v/@halo-dev/admin-api.svg" alt="npm version"/>
+  <a href="https://www.npmjs.com/package/@nineya/halo-admin-api">
+    <img src="https://img.shields.io/npm/v/@nineya/halo-admin-api.svg" alt="npm version"/>
   </a>
 </p>
 <p align="center"> 一个与 Halo api 交互的工具集 </p>
@@ -37,7 +37,7 @@
 使用 `npm` 方式安装示例如下：
 
 ```shell
-npm install @halo-dev/admin-api --save
+npm install @nineya/halo-admin-api --save
 ```
 
 ### 使用示例
@@ -45,7 +45,7 @@ npm install @halo-dev/admin-api --save
 以下是一个获取后台文章列表的简单示例：
 
 ```javascript
-import { AdminApiClient, HaloRestAPIClient } from "@halo-dev/admin-api";
+import { AdminApiClient, HaloRestAPIClient } from "@nineya/halo-admin-api";
 //halo http 请求客户端.
 const haloRestApiClient = new HaloRestAPIClient({
   baseUrl: process.env.HALO_BASE_URL,
@@ -59,9 +59,9 @@ haloAdminClient.post.list().then((res) => {
 });
 ```
 
-关于如何通过用户名和密码进行自动认证，这里提供了一个示例 [example](https://github.com/halo-dev/js-sdk/tree/master/example)
+关于如何通过用户名和密码进行自动认证，这里提供了一个示例 [example](https://github.com/nineya/halo-sdk-js/tree/master/example)
 
-由于 `@halo-dev/admin-api` 依赖 `@halo-dev/rest-api-client`，而其是基于 `axios` 进行 `http` 通信的，因此如果你有需要的话，可以使用 [axios](https://axios-http.com/docs/intro), 的拦截器对 `halo api` 的请求与响应进行一些处理。
+由于 `@nineya/halo-admin-api` 依赖 `@nineya/halo-rest-api-client`，而其是基于 `axios` 进行 `http` 通信的，因此如果你有需要的话，可以使用 [axios](https://axios-http.com/docs/intro), 的拦截器对 `halo api` 的请求与响应进行一些处理。
 
 ```javascript
 import axios from "axios";
@@ -93,14 +93,14 @@ axios.interceptors.response.use(
 );
 ```
 
-`@halo-dev/content-api` 也可以这样使用拦截器。
+`@nineya/halo-content-api` 也可以这样使用拦截器。
 
 ## 前台 API 库
 
 使用 `npm` 安装示例如下：
 
 ```shell
-npm install @halo-dev/content-api --save
+npm install @nineya/halo-content-api --save
 ```
 
 ### 使用示例
@@ -108,7 +108,7 @@ npm install @halo-dev/content-api --save
 同样我们使用一个获取博客前台文章列表的示例如下：
 
 ```javascript
-import { ContentApiClient, HaloRestAPIClient } from "@halo-dev/content-api";
+import { ContentApiClient, HaloRestAPIClient } from "@nineya/halo-content-api";
 // 创建 halo http 请求客户端
 const haloRestApiClient = new HaloRestAPIClient({
   baseUrl: process.env.HALO_BASE_URL,
@@ -129,16 +129,16 @@ haloContentClient.post.list().then((res) => {
 你可以使用 `npm` 安装它，示例如下：
 
 ```shell
-npm install @halo-dev/rest-api-client
+npm install @nineya/halo-rest-api-client
 ```
 
 使用 `require` 或 `import` 导入
 
 ```javascript
 // CommonJS
-const { HaloRestAPIClient } = require("@halo-dev/rest-api-client");
+const { HaloRestAPIClient } = require("@nineya/halo-rest-api-client");
 // ES modules
-import { HaloRestAPIClient } from "@halo-dev/rest-api-client";
+import { HaloRestAPIClient } from "@nineya/halo-rest-api-client";
 ```
 
 ### 使用示例
@@ -213,7 +213,7 @@ import {
   // FileTokenStore,
   // TokenStore,
   DefaultTokenProvider,
-} from "@halo-dev/rest-clint-api";
+} from "@nineya/halo-rest-clint-api";
 
 // Use LocalStorageTokenStore to persistence AccessToken to localStorage (in browser only)
 //you can use FileTokenStore if in the Node environment.
@@ -245,7 +245,7 @@ haloRestApiClient.setTokenProvider(tokenProvider);
 //now you can use haloRestApiClient to build your api client
 ```
 
-完整的例子可以点 [这里](https://github.com/halo-dev/js-sdk/tree/master/example)
+完整的例子可以点 [这里](https://github.com/nineya/halo-sdk-js/tree/master/example)
 
 ### 发送 Http 请求
 
@@ -272,12 +272,12 @@ client.post("https://example.halo.run", parameters);
 使用 `npm` 安装示例如下：
 
 ```shell
-npm install @halo-dev/logger --save
+npm install @nineya/halo-logger --save
 ```
 
 ### 主要概念
 
-`@halo-dev/logger` 包支持按从最详细到最不详细的顺序指定的以下日志级别:
+`@nineya/halo-logger` 包支持按从最详细到最不详细的顺序指定的以下日志级别:
 
 - debug
 - info
@@ -293,7 +293,7 @@ npm install @halo-dev/logger --save
 #### 示例 1 - 基本使用
 
 ```javascript
-import * as Logger from "@halo-dev/logger";
+import * as Logger from "@nineya/halo-logger";
 Logger.setLogLevel ("info");
 
 //operations will now emit info, warning, and error logs
@@ -313,7 +313,7 @@ client.post.list ()
 #### 示例 2 - 覆盖原先日志输出方式
 
 ```javascript
-import { HaloLogger, setLogLevel } from "@halo-dev/logger";
+import { HaloLogger, setLogLevel } from "@nineya/halo-logger";
 
 setLogLevel("warning");
 

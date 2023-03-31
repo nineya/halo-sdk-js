@@ -1,4 +1,4 @@
-import { HaloRestAPIClient, HttpClient } from '@halo-dev/rest-api-client'
+import { HaloRestAPIClient, HttpClient } from '@nineya/halo-rest-api-client'
 import { buildPath } from './url'
 import { AccessToken, Environment, LoginPreCheck, Response } from './types'
 import {
