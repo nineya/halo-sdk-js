@@ -13,7 +13,8 @@
   },
   "private": false,
   "scripts": {
-    "build": "rollup -c rollup.tracker.config.js"
+    "build": "rollup -c rollup.tracker.config.js",
+    "push": "npm publish"
   },
   "files": [
     "lib"

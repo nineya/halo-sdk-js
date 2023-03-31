@@ -15,6 +15,7 @@
   "scripts": {
     "dev": "tsc --build --force --watch",
     "build": "tsc --build --force",
+    "push": "npm publish",
     "test": "jest --rootDir src"
   },
   "files": [

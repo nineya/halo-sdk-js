@@ -14,6 +14,7 @@
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build",
+    "push": "npm publish",
     "test": "echo \"Error: no test specified\""
   },
   "files": [

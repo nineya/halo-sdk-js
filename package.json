@@ -7,6 +7,7 @@
     "test": "pnpm --filter \"./packages/**\" run test",
     "dev": "pnpm --filter \"./packages/**\" run dev --parallel",
     "build": "pnpm --filter \"./packages/**\" run build",
+    "push": "pnpm --filter \"./packages/**\" run push",
     "build:docs": "typedoc --excludeExternals --readme README.md --entryPoints packages/admin-api/src packages/content-api/src packages/logger/src packages/rest-api-client/src",
     "lint": "eslint .",
     "cleanup": "rimraf node_modules docs packages/**/lib packages/**/node_modules",
