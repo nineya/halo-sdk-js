@@ -100,6 +100,18 @@ export class AttachmentClient {
   }
 
   /**
+   * List all of attachment types.
+   *
+   * @returns Returns a response of attachment types.
+   */
+  public listTeams(): Promise<Response<Array<string>>> {
+    const path = buildPath({
+      endpointName: 'attachments/teams',
+    })
+    return this.client.get(path, {})
+  }
+
+  /**
    * Upload a single attachment file.
    *
    * @param data attachment file object.

@@ -85,6 +85,7 @@ export type AccessToken = {
 }
 
 export interface AttachmentQuery extends PageQuery {
+  team?: string
   attachmentType?: string
   mediaType?: string
 }
@@ -99,6 +100,7 @@ export interface Attachment {
   size: number
   suffix: string
   thumbPath: string
+  team?: string
   type: string
   width: number
   height: number
