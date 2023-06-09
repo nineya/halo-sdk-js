@@ -66,13 +66,21 @@ export class AttachmentClient {
    *
    * @param attachmentId attachment id
    * @param name a new attachment name
+   * @param team a new attachment team
    * @returns Returns an updated attachment response.
    */
-  public update(attachmentId: number, name: string): Promise<Response<Attachment>> {
+  public update(attachmentId: number, name: string, team: string): Promise<Response<Attachment>> {
     const path = buildPath({
       endpointName: `attachments/${attachmentId}`,
     })
-    return this.client.put(path, { name })
+    return this.client.put(path, { name, team })
+  }
+
+  public updateInBatch(params: Array<Attachment>): Promise<Response<Array<Attachment>>> {
+    const path = buildPath({
+      endpointName: 'attachments/batch',
+    })
+    return this.client.put(path, [...params])
   }
 
   /**
