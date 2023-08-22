@@ -124,14 +124,16 @@ export class AttachmentClient {
    *
    * @param data attachment file object.
    * @param options other upload options.
+   * @param team attachment team types.
    * @returns Returns a response of uploaded attachment
    */
-  public upload(data: unknown, options?: UploadOptions): Promise<Response<Attachment>> {
+  public upload(data: unknown, options?: UploadOptions, team?: string): Promise<Response<Attachment>> {
     const path = buildPath({
       endpointName: 'attachments/upload',
     })
     const formData = new FormData()
     formData.append('file', data)
+    team && formData.append('team', team)
     return this.client.post(path, formData, { ...options })
   }
 
@@ -140,9 +142,10 @@ export class AttachmentClient {
    *
    * @param data attachment file object.
    * @param options other upload options.
+   * @param team attachment team types.
    * @returns Returns a response of uploaded attachments.
    */
-  public uploadInBatch(data: Array<unknown>, options?: UploadOptions): Promise<Response<Array<Attachment>>> {
+  public uploadInBatch(data: Array<unknown>, options?: UploadOptions, team?: string): Promise<Response<Array<Attachment>>> {
     const path = buildPath({
       endpointName: 'attachments/uploads',
     })
@@ -150,6 +153,7 @@ export class AttachmentClient {
     data.forEach((fileStream) => {
       formData.append('files', fileStream)
     })
+    team && formData.append('team', team)
     return this.client.post(path, formData, { ...options })
   }
 }
