@@ -145,7 +145,11 @@ export class AttachmentClient {
    * @param team attachment team types.
    * @returns Returns a response of uploaded attachments.
    */
-  public uploadInBatch(data: Array<unknown>, options?: UploadOptions, team?: string): Promise<Response<Array<Attachment>>> {
+  public uploadInBatch(
+    data: Array<unknown>,
+    options?: UploadOptions,
+    team?: string,
+  ): Promise<Response<Array<Attachment>>> {
     const path = buildPath({
       endpointName: 'attachments/uploads',
     })
