@@ -302,6 +302,7 @@ export type ThemeProperty = {
   hasOptions: boolean
   isActivated: boolean
   screenshots: string
+  editorOptions: string
   postMetaField: Array<string>
   sheetMetaField: Array<string>
 }
