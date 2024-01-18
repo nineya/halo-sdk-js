@@ -1,6 +1,6 @@
 {
   "name": "@nineya/halo-admin-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Halo admin api client.",
   "main": "lib/index.js",
   "module": "./lib/index.js",
